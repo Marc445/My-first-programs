@@ -1,0 +1,43 @@
+#include <iostream> 
+
+using namespace std;
+
+int main () {
+
+// Declare variable 
+int choice;
+int Celsius;
+int Fahrenheit;
+
+cout << "Pick number 1 to convert to Celsius"<< endl;
+cout << "Pick number 2 to convert to Fahrenheit" << endl;
+
+cin >> choice;
+
+if (choice ==1 ) {
+  
+   cout <<"What is the degree in Fahrenheit ?"<< endl;
+   
+   cin >> Fahrenheit;
+   Celsius = (Fahrenheit -32) *.5556;
+   cout << Fahrenheit << " degree in Fahrenheit is "<< Celsius <<" degree in Celsius" << endl;
+
+}
+
+else if (choice==2){
+   cout <<"What is the degree in Celsius ?" << endl;
+
+  cin >> Celsius;
+ Fahrenheit = (Celsius *1.8) +32;
+
+ cout << Celsius << " degree in Celsius is " << Fahrenheit << " degree in Fahrenheit" << endl;
+
+}
+else {
+  cout<< "Invalid choice"<< endl;
+
+}
+  return 0;
+
+
+}
